@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloquear botão direito</title>
+<script>
+    //  funcao para bloquear o botao direito do mouse
+    function bloquearBotaoDireito(event) {
+        event.preventDefault();
+    }
+
+    // adicionar event listener p/ bloquear o botao direito do mouse quando o documento estiver carregado
+    document.addEventListener('contextmenu', bloquearBotaoDireito);
+</script>
+</head>
+<body>
+    <h1>Botão direito bloqueado</h1>
+</body>
+</html>
